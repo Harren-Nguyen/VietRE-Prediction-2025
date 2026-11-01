@@ -29,7 +29,7 @@ PREFIXES = {
 PROVINCE_ALIAS = {"hcm": "ho chi minh", "tphcm": "ho chi minh",
                   "sai gon": "ho chi minh", "hn": "ha noi"}
 
-MIN_COUNT = 10  # street or ward that is under 10 rows in dataset -> "ít dữ liệu"
+MIN_COUNT = 10  # street or ward that is under 10 rows in dataset -> "limited data"
 CONF_LEVELS = (0.5, 0.8, 0.9)  # prediction interval confidence levels
 PRICE_BAND_EDGES = [10]  # billion VND: Separate predictions for houses under and above 10 billion VND
 # Decision trees output step functions, so values higher than most training samples get capped at a SINGLE prediction
