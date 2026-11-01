@@ -1,4 +1,5 @@
 .venv/
 __pychache__/
-models/*.joblib
-data/*.csv
+dataset/
+backup/
+reports/

@@ -1,5 +1,0 @@
-﻿model,MedAPE_pct,MedAPE_std,Within20_pct,fit_time_s
-Baseline (median price),45.496,0.058,27.127,0.014
-Baseline (median price/m²),36.099,0.129,28.548,0.017
-Ridge + one-hot,20.532,0.043,48.971,0.339
-HistGB,15.495,0.097,59.612,33.049
