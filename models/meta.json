@@ -1,0 +1,91 @@
+{
+  "trained_at": "2026-11-01T13:38:15",
+  "model_name": "HistGB",
+  "price_unit": "billion VND",
+  "features": [
+    "area",
+    "floors",
+    "bedrooms",
+    "bathrooms",
+    "street",
+    "ward",
+    "province"
+  ],
+  "n_train": 126098,
+  "n_test": 31525,
+  "train_metrics": {
+    "MedAPE_pct": 11.845711431287107,
+    "Within20_pct": 67.49750194293327
+  },
+  "test_metrics": {
+    "MedAPE_pct": 14.668363873018073,
+    "Within20_pct": 61.26883425852498
+  },
+  "baseline_test_metrics": {
+    "Baseline (median price)": {
+      "MedAPE_pct": 45.45454545454545,
+      "Within20_pct": 26.911974623314826
+    },
+    "Baseline (median price/m²)": {
+      "MedAPE_pct": 36.499999999999986,
+      "Within20_pct": 28.843774781919112
+    }
+  },
+  "error_by_support": {
+    "ok": {
+      "n": 26410,
+      "MedAPE_pct": 14.311741364694225,
+      "Within20_pct": 62.33623627413858
+    },
+    "edge": {
+      "n": 4178,
+      "MedAPE_pct": 17.131720298466146,
+      "Within20_pct": 55.600765916706564
+    },
+    "out": {
+      "n": 937,
+      "MedAPE_pct": 16.794755823792116,
+      "Within20_pct": 56.45677694770544
+    }
+  },
+  "conformal": {
+    "band_edges": [
+      10
+    ],
+    "levels": {
+      "0.5": [
+        0.14017348534662455,
+        0.19048076603974723
+      ],
+      "0.8": [
+        0.32799620595832746,
+        0.4281641905454057
+      ],
+      "0.9": [
+        0.5196028286823873,
+        0.6310235998720399
+      ]
+    },
+    "test_coverage_pct": {
+      "0.5": 51.939730372720064,
+      "0.8": 80.88501189532117,
+      "0.9": 90.30927835051547
+    },
+    "test_coverage80_by_support_pct": {
+      "ok": 81.75312381673608,
+      "edge": 76.78314983245572,
+      "out": 74.70651013874067
+    },
+    "test_coverage80_by_price_band_pct": {
+      "band0": 80.7639299074621,
+      "band1": 81.10446962262468
+    },
+    "median_width_ratio_80": 1.9270540000840926
+  },
+  "versions": {
+    "python": "3.10.11",
+    "sklearn": "1.5.2",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4"
+  }
+}

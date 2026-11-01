@@ -1,0 +1,13 @@
+{
+  "internal_holdout": {
+    "n": 94,
+    "MedAPE_pct": 17.09007091656275,
+    "Within20_pct": 56.38297872340425
+  },
+  "external": {
+    "enabled": false,
+    "reason": "No sufficiently verified external benchmark",
+    "log_uplift": 0.0,
+    "external_n": 0
+  }
+}
