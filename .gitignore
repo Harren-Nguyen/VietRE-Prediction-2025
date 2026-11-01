@@ -1,5 +1,6 @@
 .venv/
 __pychache__/
+*.py[cod]
 dataset/
 backup/
 reports/
